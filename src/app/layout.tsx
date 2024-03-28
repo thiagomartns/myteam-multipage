@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Livvic } from "next/font/google";
 import "./globals.css";
 import { Navigation } from "@/components/navigation";
+import { Footer } from "@/components/footer";
 
 const livvic = Livvic({ subsets: ["latin"], weight: "400" });
 
@@ -18,8 +19,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={livvic.className}>
-        <Navigation />
-        {children}
+        <div>
+          <Navigation />
+          {children}
+          <Footer />
+        </div>
       </body>
     </html>
   );

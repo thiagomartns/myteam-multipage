@@ -25,6 +25,12 @@ const config = {
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         "midnight-green": "hsl(var(--midnight-green))",
+        "dark-green": "hsl(var(--dark-green))",
+        "light-coral": "hsl(var(--light-coral))",
+        "rapture-blue": "hsl(var(--rapture-blue))",
+        "police-blue": "hsl(var(--police-blue))",
+        "deep-jungle-green": "hsl(var(--deep-jungle-green))",
+        "sacramento-state-green": "hsl(var(--sacramento-state-green))",
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
