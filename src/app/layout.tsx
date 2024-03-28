@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Livvic } from "next/font/google";
 import "./globals.css";
+import { Navigation } from "@/components/navigation";
 
 const livvic = Livvic({ subsets: ["latin"], weight: "400" });
 
@@ -16,7 +17,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={livvic.className}>{children}</body>
+      <body className={livvic.className}>
+        <Navigation />
+        {children}
+      </body>
     </html>
   );
 }
