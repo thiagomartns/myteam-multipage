@@ -125,5 +125,12 @@
       font-size: 0.95rem;
       line-height: 25px;
     }
+
+    .main-container {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      align-items: center;
+    }
   }
 }
