@@ -3,11 +3,12 @@ import React from "react";
 import LogoImage from "@/assets/img/logo.svg";
 import Pinterest from "@/assets/img/icon-pinterest.svg";
 import { Facebook, Twitter } from "lucide-react";
+import Link from "next/link";
 
 export const Footer = () => {
   return (
     <section className="bg-dark-green py-10 text-white">
-      <div className="main-container flex-col gap-5 lg:container lg:max-w-screen-xl">
+      <div className="main-container flex-col gap-5 container md:max-w-screen-md lg:max-w-screen-xl">
         <div className="text-white flex flex-col gap-5 items-center sm:flex-row sm:justify-between sm:w-full ">
           <div className="flex flex-col gap-2 sm:gap-10">
             <Image
@@ -17,8 +18,12 @@ export const Footer = () => {
               height={100}
             />
             <ul className="flex justify-between gap-5  body-1">
-              <li>home</li>
-              <li>about</li>
+              <Link className="hover:text-light-coral " href="/">
+                home
+              </Link>
+              <Link className="hover:text-light-coral " href="/about">
+                about
+              </Link>
             </ul>
           </div>
           <div className="flex flex-col gap-2 justify-center items-center sm:items-end">

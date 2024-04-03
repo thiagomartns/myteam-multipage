@@ -2,11 +2,12 @@ import LogoImage from "@/assets/img/logo.svg";
 import { Menu } from "lucide-react";
 import Image from "next/image";
 import { ContactButton } from "../contact-button";
+import Link from "next/link";
 
 export const Navigation = () => {
   return (
-    <div className="p-5 bg-midnight-green">
-      <div className="main-container lg:container lg:max-w-screen-xl">
+    <div className="pt-6 bg-midnight-green">
+      <div className="main-container container md:max-w-screen-md lg:max-w-screen-xl">
         <div className="flex gap-5 items-center">
           <Image
             src={LogoImage}
@@ -14,12 +15,18 @@ export const Navigation = () => {
             width={150}
             height={100}
           />
-          <ul className="hidden sm:flex gap-2 body-1 text-white">
-            <li>home</li>
-            <li>about</li>
+          <ul className="hidden md:flex gap-2 body-1 text-white">
+            <Link className="hover:text-light-coral " href="/">
+              home
+            </Link>
+            <Link className="hover:text-light-coral " href="/about">
+              about
+            </Link>
           </ul>
         </div>
-        <Menu className="block sm:hidden" color="white" />
+        <div className="block md:hidden">
+          <Menu size={32} color="white" />
+        </div>
         <ContactButton />
       </div>
     </div>

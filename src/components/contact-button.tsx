@@ -3,7 +3,7 @@ import { Button } from "./ui/button";
 
 export const ContactButton = () => {
   return (
-    <Button className="hidden sm:block font-bold rounded-2xl bg-transparent border border-white hover:bg-white hover:text-midnight-green">
+    <Button className="hidden md:block font-bold rounded-2xl bg-transparent border border-white hover:bg-white hover:text-midnight-green">
       contact us
     </Button>
   );

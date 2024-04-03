@@ -97,32 +97,32 @@
     }
 
     .heading-l {
-      font-size: 6, 25rem;
+      font-size: 6.25rem; /* 100px */
       line-height: 100px;
     }
 
     .heading-s {
-      font-size: 4rem;
+      font-size: 4rem; /* 64px */
       line-height: 56px;
     }
 
     .heading-h2 {
-      font-size: 3rem;
+      font-size: 3rem; /* 48px */
       line-height: 48px;
     }
 
     .heading-h3 {
-      font-size: 1.125rem;
+      font-size: 1.125rem; /* 18px */
       line-height: 28px;
     }
 
     .body-1 {
-      font-size: 1.125rem;
+      font-size: 1.125rem; /* 18px */
       line-height: 28px;
     }
 
     .body-2 {
-      font-size: 0.95rem;
+      font-size: 0.95rem; /* 15.2px */
       line-height: 25px;
     }
 
