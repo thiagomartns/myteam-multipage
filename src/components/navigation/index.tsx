@@ -9,12 +9,14 @@ export const Navigation = () => {
     <div className="pt-6 bg-midnight-green">
       <div className="main-container container md:max-w-screen-md lg:max-w-screen-xl">
         <div className="flex gap-5 items-center">
-          <Image
-            src={LogoImage}
-            alt="myteam Logo Image"
-            width={150}
-            height={100}
-          />
+          <Link href="/">
+            <Image
+              src={LogoImage}
+              alt="myteam Logo Image"
+              width={150}
+              height={100}
+            />
+          </Link>
           <ul className="hidden md:flex gap-2 body-1 text-white">
             <Link className="hover:text-light-coral " href="/">
               home
