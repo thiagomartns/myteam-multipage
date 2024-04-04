@@ -3,6 +3,7 @@ import Image from "next/image";
 import AvatarKady from "@/assets/img/avatar-kady.jpg";
 import AvatarAiysha from "@/assets/img/avatar-aiysha.jpg";
 import AvatarArthur from "@/assets/img/avatar-arthur.jpg";
+import IconQuotes from "@/assets/img/icon-quotes.svg";
 
 export const Testimonials = () => {
   const items = [
@@ -43,12 +44,17 @@ export const Testimonials = () => {
                 key={testimonial.id}
                 className="text-white flex flex-col items-center justify-center gap-2 py-8"
               >
-                <div className="relative z-10 lg:container lg: h-32">
-                  <p className="font-semibold text-center text-lg">
+                <div className="relative lg:container lg: h-32">
+                  <p className="font-semibold text-center text-lg z-50 relative">
                     {testimonial.text}
                   </p>
-                  <p className="absolute top-0 right-1/2 z-1 text-7xl">"</p>
+                  <Image
+                    alt="Quotes Icon"
+                    src={IconQuotes}
+                    className="absolute -top-8 right-1/2 z-10"
+                  />
                 </div>
+
                 <div className="flex flex-col items-center py-4">
                   <h1 className="text-rapture-blue font-bold text-2xl">
                     {testimonial.name}
