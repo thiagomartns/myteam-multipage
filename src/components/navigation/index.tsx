@@ -27,7 +27,9 @@ export const Navigation = () => {
         <div className="block md:hidden">
           <Menu size={32} color="white" />
         </div>
-        <ContactButton />
+        <div className="hidden md:block">
+          <ContactButton />
+        </div>
       </div>
     </div>
   );
