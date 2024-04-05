@@ -60,7 +60,7 @@ export const DirectorsSection = () => {
         <h1 className="text-center text-white text-4xl font-bold md:text-5xl lg:text-6xl ">
           Meet the directors
         </h1>
-        <ul className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+        <ul className="grid grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-3">
           {directors.map((director) => (
             <DirectorCard director={director} />
           ))}
