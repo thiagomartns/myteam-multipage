@@ -2,6 +2,7 @@
 import { Linkedin, Plus, Twitter, X } from "lucide-react";
 import Image from "next/image";
 import React, { useState } from "react";
+import { motion as m } from "framer-motion";
 
 interface Director {
   img: any;
@@ -23,9 +24,16 @@ export const DirectorCard = ({ director }: DirectorProps) => {
   };
 
   return (
-    <li className="flex flex-col items-center py-12 mt-10 px-5 bg-dark-green relative">
+    <li className="flex flex-col items-center py-12 mt-10 px-5 bg-dark-green relative w-96 h-80 my-0 mx-auto">
       {opened ? (
-        <div className="flex flex-col gap-8 justify-center h-full items-center  ">
+        <m.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{
+            delay: 0.2,
+          }}
+          className="flex flex-col gap-8 justify-center h-full items-center"
+        >
           <h1 className="text-rapture-blue font-bold text-2xl">
             {director.name}
           </h1>
@@ -36,7 +44,7 @@ export const DirectorCard = ({ director }: DirectorProps) => {
             <Twitter />
             <Linkedin />
           </div>
-        </div>
+        </m.div>
       ) : (
         <>
           <Image
@@ -54,18 +62,22 @@ export const DirectorCard = ({ director }: DirectorProps) => {
         </>
       )}
 
-      <div
+      <m.div
+        whileHover={{
+          scale: 1.2,
+          transition: { duration: 0.3 },
+        }}
         onClick={handleChange}
-        className={`rounded-full p-3 absolute -bottom-7 cursor-pointer ${
+        className={`rounded-full p-3 absolute -bottom-7 cursor-pointer  hover:bg-rapture-blue hover:bg-opacity-70 ${
           opened ? "bg-rapture-blue" : "bg-light-coral"
         }`}
       >
         {opened ? (
-          <X size={32} className="text-sacramento-state-green p-1 " />
+          <X size={32} className="text-sacramento-state-green p-1" />
         ) : (
           <Plus size={32} className="text-sacramento-state-green p-1" />
         )}
-      </div>
+      </m.div>
     </li>
   );
 };
