@@ -12,7 +12,7 @@ export const ContactButton = ({
 }: ContactButtonProps) => {
   return (
     <Button
-      className={`font-bold rounded-2xl bg-transparent border ${
+      className={`font-bold rounded-2xl bg-transparent border px-8 text-base items-center ${
         color === "light"
           ? " border-white hover:bg-white hover:text-midnight-green"
           : "border-dark-green text-dark-green hover:bg-dark-green hover:text-white"

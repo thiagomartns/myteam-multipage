@@ -57,7 +57,9 @@ export const DirectorCard = ({ director }: DirectorProps) => {
             <h1 className="text-rapture-blue font-bold text-2xl">
               {director.name}
             </h1>
-            <p className="italic text-lg text-white">{director.role}</p>
+            <p className="italic text-lg text-white text-center">
+              {director.role}
+            </p>
           </div>
         </>
       )}

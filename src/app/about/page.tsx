@@ -3,6 +3,8 @@ import React from "react";
 
 import { DirectorsSection } from "@/components/directors-section";
 
+import { ClientsSection } from "@/components/clients-section";
+
 export default function AboutPage() {
   return (
     <>
@@ -23,6 +25,7 @@ export default function AboutPage() {
         </div>
       </section>
       <DirectorsSection />
+      <ClientsSection />
       <CallToAction />
     </>
   );
