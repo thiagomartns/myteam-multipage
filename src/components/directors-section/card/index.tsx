@@ -1,11 +1,11 @@
 "use client";
 import { Linkedin, Plus, Twitter, X } from "lucide-react";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import React, { useState } from "react";
 import { motion as m } from "framer-motion";
 
 interface Director {
-  img: any;
+  img: string | StaticImageData;
   name: string;
   role: string;
   id: number;
