@@ -1,14 +1,14 @@
 import LogoImage from "@/assets/img/logo.svg";
-import { Menu } from "lucide-react";
 import Image from "next/image";
 import { ContactButton } from "../contact-button";
 import Link from "next/link";
+import MenuBurger from "../menu-burger";
 
 export const Navigation = () => {
   return (
-    <div className="pt-6 bg-midnight-green">
-      <div className="main-container container md:max-w-screen-md lg:max-w-screen-xl">
-        <div className="flex gap-5 items-center">
+    <div className="py-6 bg-midnight-green md:pt-10">
+      <div className="container lg:max-w-screen-xl w-full flex justify-between">
+        <div className="flex gap-5 items-center ">
           <Link href="/">
             <Image
               src={LogoImage}
@@ -27,7 +27,7 @@ export const Navigation = () => {
           </ul>
         </div>
         <div className="block md:hidden">
-          <Menu size={32} color="white" />
+          <MenuBurger />
         </div>
         <div className="hidden md:block">
           <ContactButton />

@@ -70,7 +70,7 @@ export const DirectorCard = ({ director }: DirectorProps) => {
           transition: { duration: 0.3 },
         }}
         onClick={handleChange}
-        className={`rounded-full p-3 absolute -bottom-7 cursor-pointer  hover:bg-rapture-blue hover:bg-opacity-70 ${
+        className={`rounded-full p-3 absolute -bottom-7 cursor-pointer  hover:bg-rapture-blue  ${
           opened ? "bg-rapture-blue" : "bg-light-coral"
         }`}
       >
