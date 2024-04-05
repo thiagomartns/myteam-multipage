@@ -1,29 +1,20 @@
 "use client";
-import { Menu, X } from "lucide-react";
-import React, { useState } from "react";
+import { Menu } from "lucide-react";
+import React from "react";
 import {
   Sheet,
   SheetClose,
   SheetContent,
-  SheetDescription,
-  SheetHeader,
-  SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
 import Link from "next/link";
 import { ContactButton } from "../contact-button";
 
 export default function MenuBurger() {
-  const [openedMenu, setOpenedMenu] = useState<boolean>(false);
-
   return (
     <Sheet>
       <SheetTrigger asChild>
-        <Menu
-          onClick={() => setOpenedMenu(true)}
-          size={30}
-          className="text-white hover:cursor-pointer lg:hidden"
-        />
+        <Menu size={30} className="text-white hover:cursor-pointer lg:hidden" />
       </SheetTrigger>
       <SheetContent className="bg-police-blue w-[60vw]">
         <div className="flex flex-col justify-center h-[35vh]">
@@ -41,9 +32,7 @@ export default function MenuBurger() {
               </SheetClose>
             </div>
             <SheetClose asChild>
-              <Link href="/contact">
-                <ContactButton />
-              </Link>
+              <ContactButton />
             </SheetClose>
           </div>
         </div>
