@@ -1,22 +1,14 @@
 "use client";
 
 import React from "react";
-import { Button } from "@/components/ui/button";
-import {
-  Form,
-  FormControl,
-  FormDescription,
-  FormField,
-  FormItem,
-  FormLabel,
-  FormMessage,
-} from "@/components/ui/form";
+import { Form, FormControl, FormField, FormItem } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
 import { SubscriberSchema } from "@/schemas";
 import { Textarea } from "@/components/ui/textarea";
+import { StyledButton } from "@/components/styled-button";
 
 export default function FormSection() {
   const form = useForm<z.infer<typeof SubscriberSchema>>({
@@ -32,7 +24,7 @@ export default function FormSection() {
   return (
     <Form {...form}>
       <form
-        /*onSubmit={form.handleSubmit(onSubmit)}*/ className="space-y-8 px-5 py-8 lg:px-0"
+        /*onSubmit={form.handleSubmit(onSubmit)}*/ className="space-y-8 px-5 w-full py-8 md:px-32 lg:px-0 lg:w-[514px] lg:my-0 mx-auto"
       >
         <FormField
           control={form.control}
@@ -89,7 +81,9 @@ export default function FormSection() {
             </FormItem>
           )}
         />
-        <Button type="submit">Submit</Button>
+        <div className="mt-5">
+          <StyledButton label="Submit" />
+        </div>
       </form>
     </Form>
   );

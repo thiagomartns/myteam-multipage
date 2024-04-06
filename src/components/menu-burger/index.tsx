@@ -8,7 +8,7 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 import Link from "next/link";
-import { ContactButton } from "../contact-button";
+import { StyledButton } from "../styled-button";
 
 export default function MenuBurger() {
   return (
@@ -32,7 +32,7 @@ export default function MenuBurger() {
               </SheetClose>
             </div>
             <SheetClose asChild>
-              <ContactButton />
+              <StyledButton label="contact us" />
             </SheetClose>
           </div>
         </div>

@@ -27,7 +27,7 @@ export const InfoHomepage = () => {
   ];
 
   return (
-    <section className="py-32 bg-dark-green">
+    <section className="py-16 bg-dark-green lg:py-32">
       <div className="container flex flex-col gap-10 lg:max-w-screen-xl lg:flex-row lg:justify-between lg:items-start">
         <h1 className=" text-white text-5xl w-[12ch] font-bold md:w-full lg:text-5xl lg:w-[25ch] xl:w-[15ch]">
           Build & manage distributed teams like no one else.

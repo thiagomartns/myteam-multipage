@@ -26,10 +26,10 @@ export default function HeroContact() {
   return (
     <div className="flex flex-col gap-8 items-center px-5 md:px-32 lg:px-0 lg:items-start lg:justify-between">
       <div className="flex flex-col gap-5 items-center lg:items-start">
-        <h1 className="text-center text-white text-5xl font-bold w-[9ch] md:text-6xl lg:text-7xl lg:text-left lg:w-[12ch]">
+        <h1 className="text-center text-white text-5xl font-bold w-[9ch] md:text-6xl xl:text-7xl lg:text-left lg:w-[12ch]">
           Contact
         </h1>
-        <h1 className="text-center text-light-coral text-4xl font-bold  md:text-5xl lg:text-6xl ">
+        <h1 className="text-center text-light-coral text-4xl font-bold  md:text-5xl xl:text-6xl ">
           Ask us about
         </h1>
       </div>

@@ -8,7 +8,7 @@ import { ClientsSection } from "@/components/clients-section";
 export default function AboutPage() {
   return (
     <>
-      <section className="py-32 pt-20 bg-midnight-green md:pt-32">
+      <section className="py-32 pt-20 bg-midnight-green">
         <div className="lg:container lg:max-w-screen-xl">
           <div className="flex flex-col gap-8 items-center px-5 md:px-32 lg:flex-row lg:px-0 lg:items-start lg:justify-between">
             <h1 className="text-center text-white text-5xl font-bold w-[9ch] md:text-6xl lg:text-7xl lg:text-left lg:w-[12ch]">

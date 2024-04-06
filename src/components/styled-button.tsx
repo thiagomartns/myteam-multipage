@@ -5,11 +5,13 @@ import Link from "next/link";
 interface ContactButtonProps {
   variant?: "primary" | "secondary";
   color?: "dark" | "light";
+  label: string;
 }
 
-export const ContactButton = ({
+export const StyledButton = ({
   variant = "primary",
   color = "light",
+  label,
 }: ContactButtonProps) => {
   return (
     <Link href="/contact">
@@ -20,7 +22,7 @@ export const ContactButton = ({
             : "border-dark-green text-dark-green hover:bg-dark-green hover:text-white"
         }`}
       >
-        contact us
+        {label}
       </Button>
     </Link>
   );

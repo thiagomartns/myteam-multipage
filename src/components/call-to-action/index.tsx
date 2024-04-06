@@ -1,5 +1,5 @@
 import React from "react";
-import { ContactButton } from "../contact-button";
+import { StyledButton } from "../styled-button";
 
 export const CallToAction = () => {
   return (
@@ -9,7 +9,7 @@ export const CallToAction = () => {
           <h1 className="text-dark-green text-4xl text-center font-bold w-[12ch] md:w-[20ch]">
             Ready to get Started?
           </h1>
-          <ContactButton color="dark" />
+          <StyledButton color="dark" label="contact us" />
         </div>
       </div>
     </section>

@@ -1,12 +1,12 @@
 import LogoImage from "@/assets/img/logo.svg";
 import Image from "next/image";
-import { ContactButton } from "../contact-button";
+import { StyledButton } from "../styled-button";
 import Link from "next/link";
 import MenuBurger from "../menu-burger";
 
 export const Navigation = () => {
   return (
-    <div className="py-6 bg-midnight-green md:pt-10">
+    <div className="py-6 bg-midnight-green ">
       <div className="container lg:max-w-screen-xl w-full flex justify-between">
         <div className="flex gap-5 items-center ">
           <Link href="/">
@@ -30,7 +30,7 @@ export const Navigation = () => {
           <MenuBurger />
         </div>
         <div className="hidden md:block">
-          <ContactButton />
+          <StyledButton label="contact us" />
         </div>
       </div>
     </div>
