@@ -8,7 +8,7 @@ import GadgetsLogo from "@/assets/img/logo-gadgets-now.png";
 
 export const ClientsSection = () => {
   return (
-    <section className="py-16 bg-dark-green md:py-32">
+    <section className="py-16 bg-sacramento-state-green md:py-32">
       <div className="container lg:max-w-screen-xl flex flex-col gap-16">
         <h1 className="text-center text-white text-4xl font-bold md:text-5xl lg:text-6xl ">
           Some of our clients

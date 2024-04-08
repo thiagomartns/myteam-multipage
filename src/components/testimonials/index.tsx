@@ -4,6 +4,8 @@ import AvatarKady from "@/assets/img/avatar-kady.jpg";
 import AvatarAiysha from "@/assets/img/avatar-aiysha.jpg";
 import AvatarArthur from "@/assets/img/avatar-arthur.jpg";
 import IconQuotes from "@/assets/img/icon-quotes.svg";
+import Pattern5 from "@/assets/img/bg-pattern-home-4-about-3.svg";
+import Pattern6 from "@/assets/img/bg-pattern-home-5.svg";
 
 export const Testimonials = () => {
   const items = [
@@ -31,10 +33,10 @@ export const Testimonials = () => {
   ];
 
   return (
-    <section className="py-16 bg-midnight-green lg:py-32">
+    <section className="py-32 pt-48 bg-deep-jungle-green relative overflow-x-hidden ">
       <div className="lg:container lg:max-w-screen-xl">
         <div className="flex flex-col gap-8 items-center px-5 md:px-32 lg:px-0 lg:items-end lg:justify-between">
-          <h1 className="text-center text-white text-5xl font-bold md:text-6xl lg:text-7xl">
+          <h1 className="z-10 text-center text-white text-5xl font-bold md:text-6xl lg:text-7xl">
             Delivering real results for top companies. Some of our{" "}
             <span className="text-rapture-blue">success stories.</span>
           </h1>
@@ -71,6 +73,12 @@ export const Testimonials = () => {
             ))}
           </div>
         </div>
+      </div>
+      <div className="absolute top-0 left-0 z-0 ">
+        <Image src={Pattern5} alt="Static Pattern" className="w-[300px] z-0" />
+      </div>
+      <div className="absolute bottom-0 right-0 z-0 lg:top-auto ">
+        <Image src={Pattern6} alt="Static Pattern" className="w-[300px] z-0" />
       </div>
     </section>
   );

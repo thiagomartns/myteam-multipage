@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export const HeroHomepage = () => {
   return (
-    <section className="bg-midnight-green relative">
+    <section className="bg-police-blue relative">
       <Content />
       <div className="hidden absolute top-0 z-0 -left-36 lg:block">
         <Image src={Pattern1} alt="Static Pattern" className="w-[300px]" />

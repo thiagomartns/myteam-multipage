@@ -28,12 +28,12 @@ export const InfoHomepage = () => {
   ];
 
   return (
-    <section className="py-16 bg-dark-green lg:py-32">
+    <section className="py-32 bg-sacramento-state-green relative overflow-x-hidden ">
       <div className="container flex flex-col gap-10 lg:max-w-screen-xl lg:flex-row lg:justify-between lg:items-start">
-        <h1 className=" text-white text-5xl font-bold md:w-full lg:text-5xl lg:w-[25ch] xl:w-[15ch]">
+        <h1 className=" text-white z-10 text-5xl font-bold w-[10ch] md:w-[20ch] lg:text-5xl lg:w-[25ch] xl:w-[15ch]">
           Build & manage distributed teams like no one else.
         </h1>
-        <ul className="lg:flex lg:flex-col lg:gap-10">
+        <ul className="z-10 lg:flex lg:flex-col lg:gap-10">
           {items.map((item) => (
             <li
               className="flex flex-col gap-5 items-center py-8 md:flex-row lg:items-start lg:py-0"
@@ -57,8 +57,8 @@ export const InfoHomepage = () => {
           ))}
         </ul>
       </div>
-      <div className="absolute top-0 ">
-        <Image src={Pattern3} alt="Static Pattern" className="w-[300px]" />
+      <div className="absolute top-0 -right-40 z-0 lg:top-auto lg:bottom-0">
+        <Image src={Pattern3} alt="Static Pattern" className="w-[300px] z-0" />
       </div>
     </section>
   );
