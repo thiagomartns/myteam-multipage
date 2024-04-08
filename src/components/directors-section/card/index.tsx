@@ -3,6 +3,7 @@ import { Linkedin, Plus, Twitter, X } from "lucide-react";
 import Image, { StaticImageData } from "next/image";
 import React, { useState } from "react";
 import { motion as m } from "framer-motion";
+import Link from "next/link";
 
 interface Director {
   img: string | StaticImageData;
@@ -40,9 +41,13 @@ export const DirectorCard = ({ director }: DirectorProps) => {
           <p className="text-white font-semibold text-center">
             {director.text}
           </p>
-          <div className="flex gap-2 justify-center text-white">
-            <Twitter />
-            <Linkedin />
+          <div className="flex gap-5 justify-center text-white">
+            <Link href="#" className="hover:text-light-coral">
+              <Twitter />
+            </Link>
+            <Link href="#" className="hover:text-light-coral">
+              <Linkedin />
+            </Link>
           </div>
         </m.div>
       ) : (

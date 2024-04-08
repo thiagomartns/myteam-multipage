@@ -30,7 +30,9 @@ export const Navigation = () => {
           <MenuBurger />
         </div>
         <div className="hidden md:block">
-          <StyledButton label="contact us" />
+          <Link href="/contact">
+            <StyledButton>Contact us</StyledButton>
+          </Link>
         </div>
       </div>
     </div>

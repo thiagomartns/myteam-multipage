@@ -1,29 +1,30 @@
 import React from "react";
-import { Button } from "./ui/button";
-import Link from "next/link";
+import { Button, ButtonProps } from "./ui/button";
 
-interface ContactButtonProps {
+interface StyledButtonProps extends Omit<ButtonProps, "variant"> {
   variant?: "primary" | "secondary";
   color?: "dark" | "light";
-  label: string;
+  children: string;
 }
 
-export const StyledButton = ({
+export const StyledButton: React.FC<StyledButtonProps> = ({
   variant = "primary",
   color = "light",
-  label,
-}: ContactButtonProps) => {
+  children,
+  ...props
+}) => {
   return (
-    <Link href="/contact">
-      <Button
-        className={`font-bold rounded-2xl bg-transparent border px-8 text-base items-center ${
-          color === "light"
-            ? " border-white hover:bg-white hover:text-midnight-green"
-            : "border-dark-green text-dark-green hover:bg-dark-green hover:text-white"
-        }`}
-      >
-        {label}
-      </Button>
-    </Link>
+    <Button
+      {...props}
+      className={`font-bold rounded-2xl bg-transparent border px-8 text-base inline-flex items-center ${
+        color === "light"
+          ? "border-white hover:bg-white hover:text-midnight-green"
+          : "border-dark-green text-dark-green hover:bg-dark-green hover:text-white"
+      }`}
+    >
+      {children}
+    </Button>
   );
 };
+
+export default StyledButton;

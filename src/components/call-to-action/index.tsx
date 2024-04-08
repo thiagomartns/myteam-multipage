@@ -1,5 +1,6 @@
 import React from "react";
 import { StyledButton } from "../styled-button";
+import Link from "next/link";
 
 export const CallToAction = () => {
   return (
@@ -9,7 +10,9 @@ export const CallToAction = () => {
           <h1 className="text-dark-green text-4xl text-center font-bold w-[12ch] md:w-[20ch]">
             Ready to get Started?
           </h1>
-          <StyledButton color="dark" label="contact us" />
+          <Link href="/contact">
+            <StyledButton color="dark">Contact us</StyledButton>
+          </Link>
         </div>
       </div>
     </section>

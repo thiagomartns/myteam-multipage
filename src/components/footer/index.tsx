@@ -34,17 +34,17 @@ export const Footer = () => {
           </div>
         </div>
         <div className="flex flex-col gap-4 sm:flex-row sm:justify-between sm:w-full">
-          <ul className="flex gap-2 justify-center">
-            <li>
+          <div className="flex gap-2 justify-center">
+            <Link href="#" className="hover:text-light-coral">
               <Facebook />
-            </li>
-            <li>
+            </Link>
+            <Link href="#" className="hover:text-light-coral">
               <Twitter />
-            </li>
-            <li>
+            </Link>
+            <Link href="#">
               <Image src={Pinterest} alt="Pinterest Logo" />
-            </li>
-          </ul>
+            </Link>
+          </div>
           <p className="body-2">Copyright 2024. All Rights Reserved</p>
         </div>
       </div>

@@ -30,10 +30,12 @@ export default function MenuBurger() {
                   about
                 </Link>
               </SheetClose>
+              <SheetClose asChild>
+                <Link href="/contact">
+                  <StyledButton>Contact us</StyledButton>
+                </Link>
+              </SheetClose>
             </div>
-            <SheetClose asChild>
-              <StyledButton label="contact us" />
-            </SheetClose>
           </div>
         </div>
       </SheetContent>
