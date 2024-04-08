@@ -3,6 +3,7 @@ import IconPerson from "@/assets/img/icon-person.svg";
 import IconCog from "@/assets/img/icon-cog.svg";
 import IconChart from "@/assets/img/icon-chart.svg";
 import Image from "next/image";
+import Pattern3 from "@/assets/img/bg-pattern-home-3.svg";
 
 export const InfoHomepage = () => {
   const items = [
@@ -55,6 +56,9 @@ export const InfoHomepage = () => {
             </li>
           ))}
         </ul>
+      </div>
+      <div className="absolute top-0 ">
+        <Image src={Pattern3} alt="Static Pattern" className="w-[300px]" />
       </div>
     </section>
   );
