@@ -15,8 +15,12 @@ import { z } from "zod";
 import { SubscriberSchema } from "@/schemas";
 import { Textarea } from "@/components/ui/textarea";
 import { StyledButton } from "@/components/styled-button";
+import { useRouter } from "next/navigation";
+import { toast } from "sonner";
 
 export default function FormSection() {
+  const router = useRouter();
+
   const form = useForm<z.infer<typeof SubscriberSchema>>({
     resolver: zodResolver(SubscriberSchema),
     defaultValues: {
@@ -30,6 +34,10 @@ export default function FormSection() {
 
   const handleSubmit = () => {
     form.reset();
+    toast.success("You've been subscribed with success!");
+    setTimeout(() => {
+      router.push("/");
+    }, 1000);
   };
 
   const isValid = form.formState.isValid;

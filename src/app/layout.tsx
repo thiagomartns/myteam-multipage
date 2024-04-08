@@ -3,6 +3,7 @@ import { Livvic } from "next/font/google";
 import "./globals.css";
 import { Navigation } from "@/components/navigation";
 import { Footer } from "@/components/footer";
+import { Toaster } from "@/components/ui/sonner";
 
 const livvic = Livvic({ subsets: ["latin"], weight: "400" });
 
@@ -24,6 +25,7 @@ export default function RootLayout({
           {children}
           <Footer />
         </div>
+        <Toaster />
       </body>
     </html>
   );
