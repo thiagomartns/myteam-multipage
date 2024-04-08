@@ -25,7 +25,7 @@ export const DirectorCard = ({ director }: DirectorProps) => {
   };
 
   return (
-    <li className="flex flex-col items-center py-12 mt-10 px-5 bg-sacramento-state-green relative w-64 h-80 my-0 mx-auto md:w-80 lg:w-96">
+    <li className="z-10 flex flex-col items-center py-12 mt-10 px-5 bg-sacramento-state-green relative w-full h-80 my-0 mx-auto md:w-80 lg:w-96">
       {opened ? (
         <m.div
           initial={{ opacity: 0 }}
@@ -38,7 +38,7 @@ export const DirectorCard = ({ director }: DirectorProps) => {
           <h1 className="text-rapture-blue font-bold text-2xl">
             {director.name}
           </h1>
-          <p className="text-white font-semibold text-center">
+          <p className="text-white font-semibold text-center text-xl">
             {director.text}
           </p>
           <div className="flex gap-5 justify-center text-white">

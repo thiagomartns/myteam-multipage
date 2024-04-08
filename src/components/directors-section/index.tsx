@@ -5,7 +5,9 @@ import AvatarDrake from "@/assets/img/avatar-drake.jpg";
 import AvatarGriffin from "@/assets/img/avatar-griffin.jpg";
 import AvatarAden from "@/assets/img/avatar-aden.jpg";
 import AvatarCruz from "@/assets/img/avatar-cruz.jpg";
-
+import Pattern2 from "@/assets/img/bg-pattern-about-2-contact-1.svg";
+import Pattern3 from "@/assets/img/bg-pattern-home-4-about-3.svg";
+import Image from "next/image";
 import { DirectorCard } from "./card";
 
 export const DirectorsSection = () => {
@@ -55,16 +57,22 @@ export const DirectorsSection = () => {
   ];
 
   return (
-    <section className="py-16 bg-deep-jungle-green lg:py-24">
-      <div className="container lg:max-w-screen-xl">
-        <h1 className="text-center text-white text-4xl font-bold md:text-5xl lg:text-6xl ">
+    <section className="bg-deep-jungle-green relative overflow-hidden">
+      <div className="container py-32 z-10 lg:max-w-screen-xl ">
+        <h1 className="z-10 text-center text-white text-4xl font-bold md:text-5xl lg:text-6xl ">
           Meet the directors
         </h1>
-        <ul className="grid grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-3">
+        <ul className=" grid grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-3">
           {directors.map((director) => (
             <DirectorCard director={director} />
           ))}
         </ul>
+      </div>
+      <div className="absolute z-0 -left-28 -top-36 w-72">
+        <Image src={Pattern2} alt="Static Pattern" className="w-full" />
+      </div>
+      <div className="absolute z-0 bottom-0 right-0 w-40">
+        <Image src={Pattern3} alt="Static Pattern" className="w-full" />
       </div>
     </section>
   );
