@@ -45,7 +45,7 @@ export const Testimonials = () => {
                 className="text-white flex flex-col items-center justify-center gap-2 py-8"
               >
                 <div className="relative min-h:32 lg:container">
-                  <p className="font-semibold text-center text-lg z-50 relative">
+                  <p className="font-semibold text-center text-xl z-50 relative">
                     {testimonial.text}
                   </p>
                   <Image

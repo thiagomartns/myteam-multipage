@@ -40,9 +40,6 @@ export default function FormSection() {
     }, 1000);
   };
 
-  const isValid = form.formState.isValid;
-  const isDirty = form.formState.isDirty;
-
   return (
     <Form {...form}>
       <form
@@ -110,9 +107,7 @@ export default function FormSection() {
           )}
         />
         <div className="mt-5">
-          <StyledButton disabled={!isValid || !isDirty} type="submit">
-            Submit
-          </StyledButton>
+          <StyledButton type="submit">Submit</StyledButton>
         </div>
       </form>
     </Form>
