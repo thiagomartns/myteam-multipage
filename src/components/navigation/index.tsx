@@ -8,7 +8,7 @@ export const Navigation = () => {
   return (
     <div className="py-6 bg-midnight-green ">
       <div className="container lg:max-w-screen-xl w-full flex justify-between">
-        <div className="flex gap-5 items-center ">
+        <div className="flex gap-10 items-center ">
           <Link href="/">
             <Image
               src={LogoImage}
@@ -17,14 +17,14 @@ export const Navigation = () => {
               height={100}
             />
           </Link>
-          <ul className="hidden md:flex gap-2 body-1 text-white">
+          <div className="hidden md:flex gap-5 body-1 text-white">
             <Link className="hover:text-light-coral " href="/">
               home
             </Link>
             <Link className="hover:text-light-coral " href="/about">
               about
             </Link>
-          </ul>
+          </div>
         </div>
         <div className="block md:hidden">
           <MenuBurger />

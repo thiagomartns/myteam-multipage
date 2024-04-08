@@ -17,14 +17,14 @@ export const Footer = () => {
               width={150}
               height={100}
             />
-            <ul className="flex justify-between gap-5  body-1">
+            <div className="flex justify-between gap-5  body-1">
               <Link className="hover:text-light-coral " href="/">
                 home
               </Link>
               <Link className="hover:text-light-coral " href="/about">
                 about
               </Link>
-            </ul>
+            </div>
           </div>
           <div className="flex flex-col gap-2 justify-center items-center sm:items-end">
             <p className="body-1">987 Hillcrest Lane</p>

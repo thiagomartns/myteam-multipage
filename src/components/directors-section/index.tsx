@@ -55,7 +55,7 @@ export const DirectorsSection = () => {
   ];
 
   return (
-    <section className="py-24 bg-sacramento-state-green">
+    <section className="py-16 bg-sacramento-state-green lg:py-24">
       <div className="container lg:max-w-screen-xl">
         <h1 className="text-center text-white text-4xl font-bold md:text-5xl lg:text-6xl ">
           Meet the directors

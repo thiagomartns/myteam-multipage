@@ -31,7 +31,7 @@ export const Testimonials = () => {
   ];
 
   return (
-    <section className="py-32 bg-midnight-green">
+    <section className="py-16 bg-midnight-green lg:py-32">
       <div className="lg:container lg:max-w-screen-xl">
         <div className="flex flex-col gap-8 items-center px-5 md:px-32 lg:px-0 lg:items-end lg:justify-between">
           <h1 className="text-center text-white text-5xl font-bold md:text-6xl lg:text-7xl">
@@ -44,7 +44,7 @@ export const Testimonials = () => {
                 key={testimonial.id}
                 className="text-white flex flex-col items-center justify-center gap-2 py-8"
               >
-                <div className="relative lg:container lg: h-32">
+                <div className="relative min-h:32 lg:container">
                   <p className="font-semibold text-center text-lg z-50 relative">
                     {testimonial.text}
                   </p>

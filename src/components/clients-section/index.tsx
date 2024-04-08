@@ -13,7 +13,7 @@ export const ClientsSection = () => {
         <h1 className="text-center text-white text-4xl font-bold md:text-5xl lg:text-6xl ">
           Some of our clients
         </h1>
-        <ul className="flex flex-col gap-16 items-center md:flex-row">
+        <div className="flex flex-col gap-16 items-center md:flex-row">
           {[
             TheVergeLogo,
             JakartaLogo,
@@ -25,7 +25,7 @@ export const ClientsSection = () => {
               <Image src={img} alt="Partner's Logo" />
             </div>
           ))}
-        </ul>
+        </div>
       </div>
     </section>
   );

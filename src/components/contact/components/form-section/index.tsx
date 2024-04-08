@@ -47,7 +47,7 @@ export default function FormSection() {
     <Form {...form}>
       <form
         onSubmit={form.handleSubmit(handleSubmit)}
-        className="space-y-8 px-5 w-full py-8 md:px-32 lg:px-0 lg:w-[514px] lg:my-0 mx-auto"
+        className="space-y-8 px-5 w-full py-8 md:px-32 lg:px-0 "
       >
         <FormField
           control={form.control}
