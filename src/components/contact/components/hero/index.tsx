@@ -3,6 +3,7 @@ import IconChart from "@/assets/img/icon-chart.svg";
 import IconPerson from "@/assets/img/icon-person.svg";
 import IconCog from "@/assets/img/icon-cog.svg";
 import Image from "next/image";
+import Pattern1 from "@/assets/img/bg-pattern-about-2-contact-1.svg";
 
 export default function HeroContact() {
   const items = [
@@ -25,7 +26,7 @@ export default function HeroContact() {
 
   return (
     <div className="flex flex-col gap-8 items-center px-5 md:px-32 lg:px-0 lg:items-start lg:justify-between">
-      <div className="flex flex-col gap-5 items-center lg:items-start">
+      <div className="z-10 flex flex-col gap-5 items-center lg:items-start">
         <h1 className="text-center text-white text-5xl font-bold w-[9ch] md:text-6xl xl:text-7xl lg:text-left lg:w-[12ch]">
           Contact
         </h1>

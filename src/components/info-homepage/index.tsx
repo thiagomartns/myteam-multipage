@@ -30,9 +30,12 @@ export const InfoHomepage = () => {
   return (
     <section className="py-32 bg-sacramento-state-green relative overflow-x-hidden ">
       <div className="container flex flex-col gap-10 lg:max-w-screen-xl lg:flex-row lg:justify-between lg:items-start">
-        <h1 className=" text-white z-10 text-5xl font-bold w-[10ch] md:w-[20ch] lg:text-5xl lg:w-[25ch] xl:w-[15ch]">
-          Build & manage distributed teams like no one else.
-        </h1>
+        <div className="flex flex-col gap-10">
+          <div className="hidden h-1 w-16 bg-light-coral lg:block"></div>
+          <h1 className=" text-white z-10 text-5xl font-bold w-[10ch] md:w-[20ch] lg:text-5xl lg:w-[25ch] xl:w-[15ch]">
+            Build & manage distributed teams like no one else.
+          </h1>
+        </div>
         <ul className="z-10 lg:flex lg:flex-col lg:gap-10">
           {items.map((item) => (
             <li

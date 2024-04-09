@@ -13,7 +13,7 @@ export const CallToAction = () => {
             Ready to get Started?
           </h1>
           <Link href="/contact">
-            <StyledButton color="dark">Contact us</StyledButton>
+            <StyledButton color="dark">contact us</StyledButton>
           </Link>
         </div>
       </div>
