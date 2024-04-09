@@ -9,6 +9,8 @@ import {
 } from "@/components/ui/sheet";
 import Link from "next/link";
 import { StyledButton } from "../styled-button";
+import Image from "next/image";
+import Pattern5 from "@/assets/img/bg-pattern-about-1-mobile-nav-1.svg";
 
 export default function MenuBurger() {
   return (
@@ -37,6 +39,13 @@ export default function MenuBurger() {
               </SheetClose>
             </div>
           </div>
+        </div>
+        <div className="absolute bottom-0 -right-32 z-0 lg:top-auto ">
+          <Image
+            src={Pattern5}
+            alt="Static Pattern"
+            className="w-[250px] z-0"
+          />
         </div>
       </SheetContent>
     </Sheet>

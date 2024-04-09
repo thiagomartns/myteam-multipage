@@ -33,7 +33,7 @@ export const Testimonials = () => {
   ];
 
   return (
-    <section className="py-32 pt-64 bg-deep-jungle-green relative overflow-x-hidden ">
+    <section className="py-64 bg-deep-jungle-green relative overflow-x-hidden lg:py-48">
       <div className="lg:container lg:max-w-screen-xl">
         <div className="flex flex-col gap-8 items-center px-5 md:px-32 lg:px-0 lg:items-end lg:justify-between">
           <h1 className="z-10 text-center text-white text-5xl font-bold md:text-6xl lg:text-7xl">
