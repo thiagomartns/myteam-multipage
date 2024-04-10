@@ -1,9 +1,12 @@
+"use client";
+
 import React from "react";
 import IconPerson from "@/assets/img/icon-person.svg";
 import IconCog from "@/assets/img/icon-cog.svg";
 import IconChart from "@/assets/img/icon-chart.svg";
 import Image from "next/image";
 import Pattern3 from "@/assets/img/bg-pattern-home-3.svg";
+import { motion as m, useScroll } from "framer-motion";
 
 export const InfoHomepage = () => {
   const items = [
@@ -28,8 +31,12 @@ export const InfoHomepage = () => {
   ];
 
   return (
-    <section className="py-32 bg-sacramento-state-green relative overflow-x-hidden ">
-      <div className="container flex flex-col gap-10 lg:max-w-screen-xl lg:flex-row lg:justify-between lg:items-start">
+    <section className="py-32 bg-sacramento-state-green relative overflow-x-hidden">
+      <m.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        className="container flex flex-col gap-10 lg:max-w-screen-xl lg:flex-row lg:justify-between lg:items-start"
+      >
         <div className="flex flex-col gap-10">
           <div className="hidden h-1 w-16 bg-light-coral lg:block"></div>
           <h1 className=" text-white z-10 text-5xl font-bold w-[10ch] md:w-[20ch] lg:text-5xl lg:w-[25ch] xl:w-[15ch]">
@@ -59,7 +66,7 @@ export const InfoHomepage = () => {
             </li>
           ))}
         </ul>
-      </div>
+      </m.div>
       <div className="absolute top-0 -right-40 z-0 lg:top-auto lg:bottom-0">
         <Image src={Pattern3} alt="Static Pattern" className="w-[300px] z-0" />
       </div>

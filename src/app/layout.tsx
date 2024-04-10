@@ -4,6 +4,8 @@ import "./globals.css";
 import { Navigation } from "@/components/navigation";
 import { Footer } from "@/components/footer";
 import { Toaster } from "@/components/ui/sonner";
+import { Progress } from "@/components/ui/progress";
+import AppProgress from "@/components/app-progress";
 
 const livvic = Livvic({ subsets: ["latin"], weight: "400" });
 
@@ -20,7 +22,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={livvic.className}>
-        <div>
+        <div className="relative">
+          <AppProgress />
           <Navigation />
           {children}
           <Footer />

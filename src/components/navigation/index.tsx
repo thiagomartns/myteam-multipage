@@ -6,7 +6,7 @@ import MenuBurger from "./components/menu-burger";
 
 export const Navigation = () => {
   return (
-    <div className="py-12 bg-police-blue">
+    <div className="py-12 bg-police-blue relative">
       <div className="container lg:max-w-screen-xl w-full flex justify-between">
         <div className="flex gap-10 items-center ">
           <Link href="/">

@@ -1,9 +1,10 @@
 import React from "react";
-import HeroContact from "@/components/contact/components/hero";
-import FormSection from "@/components/contact/components/form-section";
+
 import Pattern1 from "@/assets/img/bg-pattern-about-2-contact-1.svg";
 import Pattern2 from "@/assets/img/bg-pattern-contact-2.svg";
 import Image from "next/image";
+import HeroContact from "@/components/pages/contact/components/hero";
+import FormSection from "@/components/pages/contact/components/form-section";
 
 export default function Contact() {
   return (

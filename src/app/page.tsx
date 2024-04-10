@@ -5,11 +5,11 @@ import { Testimonials } from "@/components/pages/home/components/testimonials";
 
 export default function Home() {
   return (
-    <>
+    <div>
       <HeroHomepage />
       <InfoHomepage />
       <Testimonials />
       <CallToAction />
-    </>
+    </div>
   );
 }
