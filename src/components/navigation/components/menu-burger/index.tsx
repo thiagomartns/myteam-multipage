@@ -8,9 +8,9 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 import Link from "next/link";
-import { StyledButton } from "../styled-button";
 import Image from "next/image";
 import Pattern5 from "@/assets/img/bg-pattern-about-1-mobile-nav-1.svg";
+import StyledButton from "@/components/styled-button";
 
 export default function MenuBurger() {
   return (

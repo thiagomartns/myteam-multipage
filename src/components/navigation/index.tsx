@@ -2,7 +2,7 @@ import LogoImage from "@/assets/img/logo.svg";
 import Image from "next/image";
 import { StyledButton } from "../styled-button";
 import Link from "next/link";
-import MenuBurger from "../menu-burger";
+import MenuBurger from "./components/menu-burger";
 
 export const Navigation = () => {
   return (

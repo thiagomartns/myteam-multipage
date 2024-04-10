@@ -2,9 +2,9 @@ import { CallToAction } from "@/components/call-to-action";
 import React from "react";
 import Pattern1 from "@/assets/img/bg-pattern-about-1-mobile-nav-1.svg";
 import Image from "next/image";
-import { DirectorsSection } from "@/components/directors-section";
+import { DirectorsSection } from "@/components/pages/about/components/directors-section";
 
-import { ClientsSection } from "@/components/clients-section";
+import { ClientsSection } from "@/components/pages/about/components/clients-section";
 
 export default function AboutPage() {
   return (
