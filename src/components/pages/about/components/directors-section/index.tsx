@@ -64,7 +64,7 @@ export const DirectorsSection = () => {
         </h1>
         <ul className=" grid grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-3">
           {directors.map((director) => (
-            <DirectorCard director={director} />
+            <DirectorCard key={director.id} director={director} />
           ))}
         </ul>
       </div>
